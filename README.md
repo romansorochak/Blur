@@ -1,6 +1,12 @@
 # Blur
 - Simple approach to apply blur effect to UIView or it's sublasses.
 
+|             Dark                |
+|---------------------------------|
+|![Demo](https://github.com/romansorochak/Blur/blob/master/Blur/Demo.gif)|
+
+
+
 |             Dark                |           Light                 |          Extra light            |
 |---------------------------------|---------------------------------|---------------------------------|
 |![Demo](https://github.com/romansorochak/Blur/blob/master/Blur/blur_dark.jpg)|![Demo](https://github.com/romansorochak/Blur/blob/master/Blur/blur_light.jpg)|![Demo](https://github.com/romansorochak/Blur/blob/master/Blur/blur_extra_light.jpg)|
@@ -24,11 +30,7 @@ Just copy this [file](https://github.com/romansorochak/Blur/blob/master/Blur/UIV
 
 # Usage
 ```swift 
-imageView.applyBlurEffect(
-  style: UIBlurEffectStyle.light,
-  enableVibrancy: true,
-  blurAlpha: 0.9
-)
+imageView.blurView.setup(style: UIBlurEffectStyle.light, alpha: 0.9).enable()
 ```
 
 ## License
