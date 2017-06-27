@@ -1,8 +1,9 @@
 # Blur
 - Simple approach to apply blur effect to UIView or it's sublasses.
 
-
-![Demo]()
+|             Dark                |           Light                 |          Extra light            |
+|---------------------------------|---------------------------------|---------------------------------|
+|![Demo](https://github.com/romansorochak/Blur/blob/master/Blur/blur_dark.jpg)|![Demo](https://github.com/romansorochak/Blur/blob/master/Blur/blur_light.jpg)|![Demo](https://github.com/romansorochak/Blur/blob/master/Blur/blur_extra_light.jpg)|
 
 ## Contents
 - [Requirements](#requirements)
