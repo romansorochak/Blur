@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uGI-Jo-fyx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,23 +22,69 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_full_version" translatesAutoresizingMaskIntoConstraints="NO" id="4QV-OR-avA">
-                                <rect key="frame" x="0.0" y="153.5" width="375" height="360"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="360"/>
                             </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a00-zW-HxA">
+                                <rect key="frame" x="0.0" y="432" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="j1I-4J-c7m"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2bX-4p-O32"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="4QV-OR-avA" secondAttribute="trailing" id="00Y-1N-Djr"/>
                             <constraint firstItem="4QV-OR-avA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="4ow-cS-x8p"/>
-                            <constraint firstItem="4QV-OR-avA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OUt-QR-chS"/>
+                            <constraint firstItem="4QV-OR-avA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="A9j-Si-e2I"/>
+                            <constraint firstItem="a00-zW-HxA" firstAttribute="top" secondItem="4QV-OR-avA" secondAttribute="bottom" constant="8" id="ZkT-gm-Abb"/>
+                            <constraint firstItem="a00-zW-HxA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kWP-WU-sKH"/>
                             <constraint firstItem="4QV-OR-avA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pBO-sg-gd5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a00-zW-HxA" secondAttribute="bottom" constant="19" id="pZ3-0q-grn"/>
+                            <constraint firstAttribute="trailing" secondItem="a00-zW-HxA" secondAttribute="trailing" id="thb-9R-f2o"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9FZ-7z-Jnw">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="DZi-Qp-txV">
+                            <rect key="frame" x="72.5" y="7" width="230" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Light"/>
+                                <segment title="Dark"/>
+                                <segment title="Extra light"/>
+                            </segments>
+                            <connections>
+                                <action selector="styleDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ox4-eu-Gvg"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
                     <connections>
+                        <outlet property="alphaPicker" destination="a00-zW-HxA" id="IQJ-At-6Mr"/>
                         <outlet property="imageView" destination="4QV-OR-avA" id="r6f-6Z-k1P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1006" y="791"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iOD-Nf-dv4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uGI-Jo-fyx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2zC-Mf-qHV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2ZF-ae-Vpx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hg-K1-6kb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237.59999999999999" y="791.15442278860576"/>
         </scene>
     </scenes>
     <resources>
