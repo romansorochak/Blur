@@ -29,6 +29,7 @@ Just copy this [file](https://github.com/romansorochak/Blur/blob/master/Blur/UIV
 
 
 # Usage
+You can call blurView property on any UIView or it's subclass.
 ```swift 
 imageView.blurView.setup(style: UIBlurEffectStyle.light, alpha: 0.9).enable()
 ```
