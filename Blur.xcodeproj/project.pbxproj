@@ -13,6 +13,9 @@
 		B5485FAE1F027E580010D77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5485FAD1F027E580010D77C /* Assets.xcassets */; };
 		B5485FB11F027E580010D77C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5485FAF1F027E580010D77C /* LaunchScreen.storyboard */; };
 		B5485FB91F027EFB0010D77C /* UIView+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5485FB81F027EFB0010D77C /* UIView+Blur.swift */; };
+		B5D83CA91F0286B90054B289 /* blur_extra_light.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5D83CA81F0286B90054B289 /* blur_extra_light.jpg */; };
+		B5D83CAB1F0286BF0054B289 /* blur_light.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5D83CAA1F0286BF0054B289 /* blur_light.jpg */; };
+		B5D83CAD1F0286C50054B289 /* blur_dark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5D83CAC1F0286C50054B289 /* blur_dark.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B5485FB01F027E580010D77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5485FB21F027E580010D77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5485FB81F027EFB0010D77C /* UIView+Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Blur.swift"; sourceTree = "<group>"; };
+		B5D83CA81F0286B90054B289 /* blur_extra_light.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blur_extra_light.jpg; sourceTree = "<group>"; };
+		B5D83CAA1F0286BF0054B289 /* blur_light.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blur_light.jpg; sourceTree = "<group>"; };
+		B5D83CAC1F0286C50054B289 /* blur_dark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blur_dark.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 		B5485FBA1F0281EA0010D77C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B5D83CAC1F0286C50054B289 /* blur_dark.jpg */,
+				B5D83CAA1F0286BF0054B289 /* blur_light.jpg */,
+				B5D83CA81F0286B90054B289 /* blur_extra_light.jpg */,
 				B5485FAD1F027E580010D77C /* Assets.xcassets */,
 				B5485FB21F027E580010D77C /* Info.plist */,
 			);
@@ -145,7 +154,10 @@
 			files = (
 				B5485FB11F027E580010D77C /* LaunchScreen.storyboard in Resources */,
 				B5485FAE1F027E580010D77C /* Assets.xcassets in Resources */,
+				B5D83CAD1F0286C50054B289 /* blur_dark.jpg in Resources */,
+				B5D83CA91F0286B90054B289 /* blur_extra_light.jpg in Resources */,
 				B5485FAC1F027E580010D77C /* Main.storyboard in Resources */,
+				B5D83CAB1F0286BF0054B289 /* blur_light.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +297,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SWXVWAU9H9;
 				INFOPLIST_FILE = Blur/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.magiclab.Blur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,7 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SWXVWAU9H9;
 				INFOPLIST_FILE = Blur/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.magiclab.Blur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -326,6 +338,7 @@
 				B5485FB71F027E580010D77C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,9 +16,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         imageView.applyBlurEffect(
-            style: UIBlurEffectStyle.light,
+            style: UIBlurEffectStyle.extraLight,
             enableVibrancy: true,
-            blurAlpha: 0.9
+            blurAlpha: 0.8
         )
     }
 
