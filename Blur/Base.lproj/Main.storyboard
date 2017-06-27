@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="360"/>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a00-zW-HxA">
-                                <rect key="frame" x="0.0" y="432" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="424" width="375" height="243"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="j1I-4J-c7m"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="2bX-4p-O32"/>
@@ -35,12 +35,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="4QV-OR-avA" secondAttribute="trailing" id="00Y-1N-Djr"/>
+                            <constraint firstItem="a00-zW-HxA" firstAttribute="top" secondItem="4QV-OR-avA" secondAttribute="bottom" id="4BA-xh-KCd"/>
                             <constraint firstItem="4QV-OR-avA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="4ow-cS-x8p"/>
                             <constraint firstItem="4QV-OR-avA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="A9j-Si-e2I"/>
-                            <constraint firstItem="a00-zW-HxA" firstAttribute="top" secondItem="4QV-OR-avA" secondAttribute="bottom" constant="8" id="ZkT-gm-Abb"/>
                             <constraint firstItem="a00-zW-HxA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kWP-WU-sKH"/>
                             <constraint firstItem="4QV-OR-avA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pBO-sg-gd5"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a00-zW-HxA" secondAttribute="bottom" constant="19" id="pZ3-0q-grn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a00-zW-HxA" secondAttribute="bottom" id="pZ3-0q-grn"/>
                             <constraint firstAttribute="trailing" secondItem="a00-zW-HxA" secondAttribute="trailing" id="thb-9R-f2o"/>
                         </constraints>
                     </view>
@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1006" y="791"/>
+            <point key="canvasLocation" x="1005.6" y="790.25487256371821"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iOD-Nf-dv4">

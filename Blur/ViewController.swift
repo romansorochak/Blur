@@ -9,26 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var alphaPicker: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageView.blurView.setup(style: UIBlurEffectStyle.light, vibrancy: true, alpha: 0.9).enable()
+        imageView.blurView.setup(style: UIBlurEffectStyle.light, alpha: 0.9).enable()
         
-        alphaPicker.selectRow(0, inComponent: 0, animated: true)
-        alphaPicker.showsSelectionIndicator = true
+        alphaPicker.selectRow(1, inComponent: 0, animated: true)
+        addLabel()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
     @IBAction func styleDidChange(_ sender: UISegmentedControl) {
-        imageView.blurView.style = {
+        let style: UIBlurEffectStyle = {
             switch sender.selectedSegmentIndex {
             case 0:
                 return .light
@@ -40,6 +41,19 @@ class ViewController: UIViewController {
                 return .light
             }
         }()
+        imageView.blurView.style = style
+        addLabel()
+    }
+    
+    func addLabel() {
+        // Label for vibrant text
+        let vibrantLabel = UILabel()
+        vibrantLabel.text = "Vibrant"
+        vibrantLabel.font = UIFont.systemFont(ofSize: 72.0)
+        vibrantLabel.sizeToFit()
+        vibrantLabel.center = imageView.center
+        
+        imageView.blurView.vibrancyContentView?.addSubview(vibrantLabel)
     }
 }
 
