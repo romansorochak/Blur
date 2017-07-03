@@ -36,6 +36,9 @@ You can call blurView property on any UIView or it's subclass.
 imageView.blurView.setup(style: UIBlurEffectStyle.light, alpha: 0.9).enable()
 ```
 
+## Author
+Roman Sorochak - iOS developer - roman.sorochak@gmail.com
+
 ## License
 
 Reusable is released under the MIT license. See [LICENSE](https://github.com/romansorochak/Blur/blob/master/LICENSE) for details.
