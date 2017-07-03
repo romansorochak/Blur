@@ -11,6 +11,8 @@
 |---------------------------------|---------------------------------|---------------------------------|
 |![Demo](https://github.com/romansorochak/Blur/blob/master/Blur/blur_light.jpg)|![Demo](https://github.com/romansorochak/Blur/blob/master/Blur/blur_extra_light.jpg)|![Demo](https://github.com/romansorochak/Blur/blob/master/Blur/blur_dark.jpg)|
 
+- Tap [here](https://github.com/romansorochak/ParallaxHeader) to see case using Blur with parallax header view - https://github.com/romansorochak/ParallaxHeader
+
 ## Contents
 - [Requirements](#requirements)
 - [Installation](#installation)
